@@ -59,11 +59,11 @@ class Robot:
     
     def set(self, mode: SetMode):
         self.__mode = mode
-        print(f'STATE {self.__mode.name}')
+        print(f'STATE {self.__mode.value}')
     
     def start(self):
         self.__is_started = True
-        print(f'START WITH {self.__mode.name}')
+        print(f'START WITH {self.__mode.value}')
     
     def stop(self):
         self.__is_started = False
