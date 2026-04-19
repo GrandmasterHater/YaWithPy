@@ -6,7 +6,7 @@ from robot import Movable, Cleanable, CleaningMode
 
 TRobot = TypeVar('TRobot')
 TMovableRobot = TypeVar('TMovableRobot', bound=Movable)
-TCleanableRobot = TypeVar('TMovableRobot', bound=Movable)
+TCleanableRobot = TypeVar('TCleanableRobot', bound=Cleanable)
 
 
 class Command(Protocol[TRobot]):
